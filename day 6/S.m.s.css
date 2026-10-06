@@ -1,0 +1,53 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 20px;
+}
+
+body > div {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 270px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 250px;
+    height: 35px;
+    box-sizing: border-box;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 16px;
+}
+.search-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 35px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+input[placeholder="Total Students"],
+input[placeholder="Average Marks"] {
+    width: 250px;
+}
