@@ -1,0 +1,10 @@
+# Ignore environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore build output
+dist/
