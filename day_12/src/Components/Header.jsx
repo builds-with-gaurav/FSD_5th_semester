@@ -1,29 +1,36 @@
+import React from 'react';
+import {useNavigate} from 'react-router-dom';
 
-import React from 'react'
-const Footer = () => {
+const Header = () => {
+  const navigate=useNavigate();
   return (
     <div>
       <nav style={{
         display: "flex",
-        gap: "25px",
-        backgroundColor: "black",
+        justifyContent: "space-between",
+        alignItems: "center",
+        backgroundColor: "navy",
         color: "white",
-        fontSize: "40px",
-        justifyContent: "space-evenly"
+        padding: "15px 25px",
+        fontSize: "18px"
       }}>
-        <div>
-          My App
+        <div style={{ fontSize: "24px", fontWeight: "bold" }}>
+          Myapp
         </div>
 
-        <div style={{ display: "flex", gap: "25px" }}>
-          <div>Home</div>
-          <div>Product</div>
-          <div>About</div>
-          <div>Cart</div>
+        <div style={{
+          display: "flex",
+          gap: "25px"
+        }}>
+          <div onClick={()=>navigate("/")}>Home</div>
+          <div onClick={()=>navigate("/product")}>Products</div>
+          <div onClick={()=>navigate("/about")}>About</div>
+          <div onClick={()=>navigate("/cart")}>Cart</div>
         </div>
+
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Header;
